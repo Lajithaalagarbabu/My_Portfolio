@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lajitha Alagarbabu | Java Full Stack Developer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Lajitha Alagarbabu, a passionate Java Full Stack Developer specializing in building responsive and scalable web applications, database management, and UI/UX design.">
+    <meta name="keywords"
+        content="Lajitha Alagarbabu, Java Developer, Full Stack Developer, Java Full Stack, Web Developer Portfolio, MySQL, HTML, CSS, JavaScript, Servlets, JSP, JDBC, N8N, Figma">
+    <meta name="author" content="Lajitha Alagarbabu">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lajitha Alagarbabu | Java Full Stack Developer">
+    <meta property="og:description"
+        content="Explore Lajitha Alagarbabu's portfolio: projects, professional experience, technical skills, and achievements in Java full-stack development and UI/UX design.">
+    <meta property="og:url" content="https://lajithaalagarbabu.github.io">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader Loading Screen -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="logo-accent">&lt;</span>Lajitha<span class="logo-accent"> /&gt;</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <span class="preloader-text">loading developer workspace</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div id="custom-cursor"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="nav-container container">
+            <a href="#hero" class="logo">
+                <span class="logo-text"><span class="logo-accent">&lt;</span>Lajitha<span class="logo-accent">
+                        /&gt;</span></span>
+                <span class="logo-sub">Java Full Stack Developer</span>
+            </a>
+
+            <!-- Desktop Navbar -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#project" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions and Theme Toggle -->
+            <div class="nav-actions">
+                <a href="https://github.com/LajithaAlagarbabu" target="_blank" class="nav-social-link"
+                    aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/lajitha-alagarbabu" target="_blank" class="nav-social-link"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="assets/Lajitha_Alagarbabu__Resume.pdf" class="btn btn-primary btn-nav-resume"
+                    download="Lajitha_Alagarbabu_Resume.pdf">
+                    Resume
+                </a>
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode" class="theme-btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="mobile-menu-btn">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button id="mobile-menu-close" aria-label="Close Navigation Menu" class="mobile-menu-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#project" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section section">
+            <div class="hero-container container grid">
+                <!-- Hero Left Side -->
+                <div class="hero-content">
+                    <span class="hero-subtitle text-gradient">Hello, I'm</span>
+                    <h1 class="hero-title">Lajitha Alagarbabu</h1>
+                    <h2 class="hero-typing-container">
+                        <span class="typing-text">Java Full Stack Developer</span>
+                    </h2>
+                    <p class="hero-description">
+                        Building scalable Java applications while crafting modern user experiences.
+                    </p>
+
+                    <div class="hero-buttons flex-group">
+                        <a href="assets/Lajitha_Alagarbabu__Resume.pdf" class="btn btn-primary"
+                            download="Lajitha_Alagarbabu_Resume.pdf">
+                            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-solid fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Glassmorphism Code Editor -->
+                    <div class="hero-code-editor card">
+                        <div class="code-header">
+                            <span class="code-dot dot-red"></span>
+                            <span class="code-dot dot-yellow"></span>
+                            <span class="code-dot dot-green"></span>
+                            <span class="code-title">Developer.java</span>
+                        </div>
+                        <pre><code id="typing-java-code"></code></pre>
+                    </div>
+                </div>
+
+                <!-- Hero Right Side -->
+                <div class="hero-visual">
+                    <div class="avatar-container">
+                        <div class="avatar-frame">
+                            <img src="assets/profile.png" alt="Lajitha Alagarbabu" class="avatar-img">
+                        </div>
+                        <div class="glow-ring glow-ring-1"></div>
+                        <div class="glow-ring glow-ring-2"></div>
+
+                        <!-- Floating Tech Icons -->
+                        <div class="floating-icon tech-java" title="Java">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <div class="floating-icon tech-html" title="HTML">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="floating-icon tech-css" title="CSS">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="floating-icon tech-js" title="JavaScript">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="floating-icon tech-mysql" title="MySQL">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="floating-icon tech-figma" title="Figma">
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <div class="floating-icon tech-git" title="Git">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+                        <div class="floating-icon tech-spring" title="Spring Boot">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="floating-icon tech-github" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section bg-alt">
+            <div class="about-container container">
+                <div class="section-header text-center">
+                    <h2 class="section-title text-gradient">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-content grid">
+                    <!-- Story Card -->
+                    <div class="about-card card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <h3>My Story</h3>
+                        <p>I am a passionate Full Stack Developer with practical experience in building responsive and
+                            scalable web applications using Java, JavaScript, HTML, CSS, Servlets, JSP, JDBC, and MySQL.
+                            I enjoy solving real-world problems through clean code, workflow automation, and
+                            user-centered UI/UX design using Figma.</p>
+                        <p>I am constantly learning new technologies and seeking opportunities where I can contribute to
+                            innovative software products while growing as a Java Developer.</p>
+                    </div>
+
+                    <!-- Highlight Grid Cards -->
+                    <div class="about-highlights-grid grid">
+                        <div class="highlight-item-card card">
+                            <div class="highlight-card-icon text-gradient">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h4 class="highlight-num">1</h4>
+                            <span class="highlight-label">Internship</span>
+                        </div>
+                        <div class="highlight-item-card card">
+                            <div class="highlight-card-icon text-gradient">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h4 class="highlight-num">9+</h4>
+                            <span class="highlight-label">Projects</span>
+                        </div>
+                        <div class="highlight-item-card card">
+                            <div class="highlight-card-icon text-gradient">
+                                <i class="fa-brands fa-figma"></i>
+                            </div>
+                            <h4 class="highlight-num">7+</h4>
+                            <span class="highlight-label">UI Designs</span>
+                        </div>
+                        <div class="highlight-item-card card">
+                            <div class="highlight-card-icon text-gradient">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h4 class="highlight-num">15+</h4>
+                            <span class="highlight-label">Skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section">
+            <div class="experience-container container">
+                <div class="section-header text-center">
+                    <h2 class="section-title text-gradient">Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="experience-grid grid">
+                    <!-- Left Side: Timeline Card -->
+                    <div class="experience-left">
+                        <div class="timeline-card card fade-in-scroll">
+                            <div class="timeline-header flex-group justify-between">
+                                <div>
+                                    <span class="intern-badge text-gradient"><i class="fa-solid fa-graduation-cap"></i>
+                                        Internship</span>
+                                    <h3 class="role-title">Developer Intern</h3>
+                                    <h4 class="company-name">Infography</h4>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar-days"></i> Apr 2025 – Aug
+                                    2025</span>
+                            </div>
+                            <ul class="timeline-responsibilities">
+                                <li><i class="fa-solid fa-circle-check"></i> Developed Full Stack Apps</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Workflow Automation</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Customer Support</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Software Testing</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Feature Development</li>
+                                <li><i class="fa-solid fa-circle-check"></i> OpenAI Integration</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Problem Solving</li>
+                                <li><i class="fa-solid fa-circle-check"></i> UI/UX Design</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Requirement Analysis</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Bug Fixing</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Team Collaboration</li>
+                            </ul>
+                            <div class="learning-focus">
+                                <span class="learning-label">Currently Learning:</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Key Domains Competency Grid -->
+                    <div class="experience-right">
+                        <div class="experience-collage-container card fade-in-scroll">
+                            <div class="domains-card-header">
+                                <span class="intern-badge text-gradient"><i class="fa-solid fa-layer-group"></i>
+                                    Competencies</span>
+                                <h3 class="role-title">Key Domains</h3>
+                            </div>
+                            <div class="domains-grid">
+                                <div class="domain-item-card">
+                                    <div class="domain-icon-box text-gradient"><i class="fa-solid fa-code"></i></div>
+                                    <div class="domain-info">
+                                        <h4>Development</h4>
+                                        <span>Full Stack Java Apps</span>
+                                    </div>
+                                </div>
+                                <div class="domain-item-card">
+                                    <div class="domain-icon-box text-gradient"><i
+                                            class="fa-solid fa-vial-circle-check"></i></div>
+                                    <div class="domain-info">
+                                        <h4>Software Testing</h4>
+                                        <span>QA & Bug Fixing</span>
+                                    </div>
+                                </div>
+                                <div class="domain-item-card">
+                                    <div class="domain-icon-box text-gradient"><i class="fa-solid fa-headset"></i></div>
+                                    <div class="domain-info">
+                                        <h4>Customer Support</h4>
+                                        <span>Client Assistance</span>
+                                    </div>
+                                </div>
+                                <div class="domain-item-card">
+                                    <div class="domain-icon-box text-gradient"><i class="fa-solid fa-gears"></i></div>
+                                    <div class="domain-info">
+                                        <h4>Automation</h4>
+                                        <span>Workflow Systems</span>
+                                    </div>
+                                </div>
+                                <div class="domain-item-card">
+                                    <div class="domain-icon-box text-gradient"><i class="fa-solid fa-robot"></i></div>
+                                    <div class="domain-info">
+                                        <h4>OpenAI Integration</h4>
+                                        <span>AI Tools & APIs</span>
+                                    </div>
+                                </div>
+                                <div class="domain-item-card">
+                                    <div class="domain-icon-box text-gradient"><i class="fa-solid fa-users"></i></div>
+                                    <div class="domain-info">
+                                        <h4>Team Collaboration</h4>
+                                        <span>Agile Workflows</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section bg-alt">
+            <div class="skills-container container">
+                <div class="section-header text-center">
+                    <h2 class="section-title text-gradient">Skills & Expertise</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid grid">
+                    <!-- Card 1: Backend Development (Spring Boot placed at the top!) -->
+                    <div class="skills-card card fade-in-scroll">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-server skills-category-icon"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>Spring Boot</span>
+                                    <span class="text-gradient">Active</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar gradient-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>Java (Core)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>Servlets & JSP</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>JDBC</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Frontend Development -->
+                    <div class="skills-card card fade-in-scroll">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-desktop skills-category-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>HTML5</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>CSS3</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>JavaScript</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item flex-group flex-wrap gap-sm" style="margin-top: 10px;">
+                                <span class="tech-badge">Responsive Mockups</span>
+                                <span class="tech-badge">DOM Manipulation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Database & Persistence -->
+                    <div class="skills-card card fade-in-scroll">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-database skills-category-icon"></i>
+                            <h3>Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>MySQL</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item flex-group flex-wrap gap-sm" style="margin-top: 15px;">
+                                <span class="tech-badge">SQL Queries</span>
+                                <span class="tech-badge">Schema Design</span>
+                                <span class="tech-badge">JDBC Connectivity</span>
+                                <span class="tech-badge">Relational Databases</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: UI/UX Design -->
+                    <div class="skills-card card fade-in-scroll">
+                        <div class="skills-card-header">
+                            <i class="fa-brands fa-figma skills-category-icon"></i>
+                            <h3>UI/UX</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>Figma (UI/UX)</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item flex-group flex-wrap gap-sm" style="margin-top: 15px;">
+                                <span class="tech-badge">Wireframing</span>
+                                <span class="tech-badge">User Journeys</span>
+                                <span class="tech-badge">Responsive Mockups</span>
+                                <span class="tech-badge">Design Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Development Tools -->
+                    <div class="skills-card card fade-in-scroll">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-screwdriver-wrench skills-category-icon"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>Git & GitHub</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item flex-group flex-wrap gap-sm" style="margin-top: 15px;">
+                                <span class="tech-badge">VS Code</span>
+                                <span class="tech-badge">Postman</span>
+                                <span class="tech-badge">Command Line</span>
+                                <span class="tech-badge">Chrome DevTools</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: APIs & Automation -->
+                    <div class="skills-card card fade-in-scroll">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-gears skills-category-icon"></i>
+                            <h3>APIs & Automation</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info flex-group justify-between">
+                                    <span>REST APIs</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item flex-group flex-wrap gap-sm" style="margin-top: 15px;">
+                                <span class="tech-badge">Workflow Automation</span>
+                                <span class="tech-badge">API Integrations</span>
+                                <span class="tech-badge">OpenAI Integration</span>
+                                <span class="tech-badge">Spring MVC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project" class="project-section section">
+            <div class="project-container container">
+                <div class="section-header text-center">
+                    <h2 class="section-title text-gradient">My Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Large Tab Buttons -->
+                <div class="project-tabs flex-group justify-center fade-in-scroll">
+                    <button class="tab-btn active" data-tab="dev">Development Projects</button>
+                    <button class="tab-btn" data-tab="uiux">UI/UX Projects</button>
+                </div>
+
+                <div class="projects-wrapper">
+                    <!-- Development Projects Grid -->
+                    <div class="tab-pane active" id="dev-pane">
+                        <div class="projects-grid dev-grid">
+                            <!-- Card 1: Primary Health Care System -->
+                            <div class="project-card card fade-in-scroll">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/healthcare_dashboard.png" alt="Primary Health Care System"
+                                        class="project-img" loading="lazy">
+                                    <div class="project-card-badge">Java & ML</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Java Stack & Python ML</span>
+                                    <h3 class="project-card-title">Primary Health Care System</h3>
+                                    <p class="project-card-desc">
+                                        A healthcare web application designed for monitoring and managing patient
+                                        records with machine learning-based predictive analysis. It allows clinical
+                                        professionals to track patient intakes, demographical health parameters, and
+                                        compute diagnostic trends.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <!-- <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">JSP</span> -->
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Machine Learning</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <a href="https://github.com/Lajithaalagarbabu/Projects/tree/main/AI-Healthcare-System-main"
+                                            target="_blank" class="btn btn-primary btn-sm">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </a>
+                                        <a href="#" class="btn btn-secondary btn-sm">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Eswari Clothing Store -->
+                            <div class="project-card card fade-in-scroll">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/ecommerce.png" alt="Eswari Clothing Store" class="project-img"
+                                        loading="lazy">
+                                    <div class="project-card-badge">Full Stack Java</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Java Web App</span>
+                                    <h3 class="project-card-title">Eswari Clothing Store</h3>
+                                    <p class="project-card-desc">
+                                        A full-featured e-commerce fashion retail website. It includes a dynamic product
+                                        catalog, multi-category filtering, persistent shopping cart management, customer
+                                        accounts checkout flows, and administrative inventory controls.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag">Java JSP</span>
+                                        <span class="tech-tag">Servlets</span>
+                                        <span class="tech-tag">JDBC</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">HTML/CSS/JS</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <a href="https://github.com/Lajithaalagarbabu/Projects/tree/main/ESWARICLOTHING%20STORE"
+                                            target="_blank" class="btn btn-primary btn-sm">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </a>
+                                        <a href="#" class="btn btn-secondary btn-sm">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- UI/UX Projects Grid -->
+                    <div class="tab-pane" id="uiux-pane">
+                        <div class="projects-grid uiux-grid">
+                            <!-- Card 1: Apple Website Replica -->
+                            <div class="project-card card fade-in-scroll" data-project-id="1">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/apple_replica.png" alt="Apple Website Replica" class="project-img"
+                                        loading="lazy">
+                                    <div class="project-card-badge">UI/UX Figma</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Interactive Design</span>
+                                    <h3 class="project-card-title">Apple Website Replica</h3>
+                                    <p class="project-card-desc">
+                                        A pixel-perfect redesign of Apple's official website focusing on modern layouts,
+                                        typography, spacing, and responsive component design.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <button class="btn btn-primary btn-sm view-details-btn">
+                                            <i class="fa-solid fa-eye"></i> Details
+                                        </button>
+                                        <a href="https://www.figma.com/design/eyGAWPYjEuipYjDFNbmN3x/Untitled?node-id=0-1&p=f&t=tD7kv13Y1g1O64FD-0"
+                                            target="_blank">
+                                            <i class="fa-brands fa-figma"></i> Figma
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Divine Foods Website -->
+                            <div class="project-card card fade-in-scroll" data-project-id="2">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/divine_foods.png" alt="Divine Foods" class="project-img"
+                                        loading="lazy">
+                                    <div class="project-card-badge">UI/UX Figma</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Restaurant Web UI</span>
+                                    <h3 class="project-card-title">Divine Foods Website</h3>
+                                    <p class="project-card-desc">
+                                        Designed a modern food delivery and restaurant website with an attractive
+                                        interface, intuitive navigation, and engaging menu panels.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <button class="btn btn-primary btn-sm view-details-btn">
+                                            <i class="fa-solid fa-eye"></i> Details
+                                        </button>
+                                        <a href="https://www.figma.com/design/TIjX6Ho7I1fouRFnn7unkl/work-2?t=tD7kv13Y1g1O64FD-0"
+                                            target="_blank" class="btn btn-secondary btn-sm">
+                                            <i class="fa-brands fa-figma"></i> Figma
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: E-Commerce Website -->
+                            <div class="project-card card fade-in-scroll" data-project-id="3">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/ecommerce.png" alt="E-Commerce Website" class="project-img"
+                                        loading="lazy">
+                                    <div class="project-card-badge">UI/UX Figma</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Shopping App UX</span>
+                                    <h3 class="project-card-title">E-Commerce Website</h3>
+                                    <p class="project-card-desc">
+                                        Designed a complete online shopping experience with product listings, shopping
+                                        cart, checkout flow, and user profile screens.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <button class="btn btn-primary btn-sm view-details-btn">
+                                            <i class="fa-solid fa-eye"></i> Details
+                                        </button>
+                                        <a href="https://www.figma.com/design/ehBFIw0zhtwS7ATQLjel5X/main-work?m=auto&t=WYUQzaENoHF7xUQH-6"
+                                            target="_blank" class="btn btn-secondary btn-sm">
+                                            <i class="fa-brands fa-figma"></i> Figma
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Primary Health Care Center -->
+                            <div class="project-card card fade-in-scroll" data-project-id="4">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/healthcare_dashboard.png" alt="Primary Health Care Center"
+                                        class="project-img" loading="lazy">
+                                    <div class="project-card-badge">UI/UX Figma</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Medical Dashboard</span>
+                                    <h3 class="project-card-title">Primary Health Care Center</h3>
+                                    <p class="project-card-desc">
+                                        Designed a healthcare management platform for doctors and patients to manage
+                                        appointments, medical reports, and diagnostic charts.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <button class="btn btn-primary btn-sm view-details-btn">
+                                            <i class="fa-solid fa-eye"></i> Details
+                                        </button>
+                                        <a href="https://www.figma.com/design/SN2pUbV8slG2gN6MmmHATI/Untitled?m=auto&t=WYUQzaENoHF7xUQH-6"
+                                            target="_blank" class="btn btn-secondary btn-sm">
+                                            <i class="fa-brands fa-figma"></i> Figma
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5: Love Nest Dating App -->
+                            <div class="project-card card fade-in-scroll" data-project-id="5">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/love_nest.png" alt="Love Nest Dating App" class="project-img"
+                                        loading="lazy">
+                                    <div class="project-card-badge">UI/UX Figma</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Mobile Application</span>
+                                    <h3 class="project-card-title">Love Nest Dating App</h3>
+                                    <p class="project-card-desc">
+                                        Designed a modern mobile dating application with a clean interface focused on
+                                        profile navigation, matchmaking, and chatting flows.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <button class="btn btn-primary btn-sm view-details-btn">
+                                            <i class="fa-solid fa-eye"></i> Details
+                                        </button>
+                                        <a href="https://www.figma.com/design/tz7ORxZOInNKksapiNv8hn/Untitled?m=auto&t=6C6g8bGpXQlsmKPR-6"
+                                            target="_blank" class="btn btn-secondary btn-sm">
+                                            <i class="fa-brands fa-figma"></i> Figma
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6: Jobringer Company Website -->
+                            <div class="project-card card fade-in-scroll" data-project-id="6">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/jobringer.png" alt="Jobringer Company Website" class="project-img"
+                                        loading="lazy">
+                                    <div class="project-card-badge">UI/UX Figma</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Corporate Web UI</span>
+                                    <h3 class="project-card-title">Jobringer Company Website</h3>
+                                    <p class="project-card-desc">
+                                        Designed a professional corporate website for a recruitment platform featuring
+                                        search modules, job details, and employer portals.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <button class="btn btn-primary btn-sm view-details-btn">
+                                            <i class="fa-solid fa-eye"></i> Details
+                                        </button>
+                                        <a href="https://www.figma.com/design/YRBZJas8BpzzXsFheTJwXk/Untitled?node-id=0-1&p=f&t=6C6g8bGpXQlsmKPR-0"
+                                            target="_blank" class="btn btn-secondary btn-sm">
+                                            <i class="fa-brands fa-figma"></i> Figma
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 7: Tamil Nadu Serial App -->
+                            <div class="project-card card fade-in-scroll" data-project-id="7">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/tamil_nadu_serial.png" alt="Tamil Nadu Serial App"
+                                        class="project-img" loading="lazy">
+                                    <div class="project-card-badge">UI/UX Figma</div>
+                                </div>
+                                <div class="project-info">
+                                    <span class="project-card-meta text-gradient">Streaming Mobile UX</span>
+                                    <h3 class="project-card-title">Tamil Nadu Serial App</h3>
+                                    <p class="project-card-desc">
+                                        Designed a streaming application for regional television serials with an
+                                        intuitive catalog interface for browsing, watching, and watchlist tracking.
+                                    </p>
+                                    <div class="project-card-tech flex-group">
+                                        <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                    <div class="project-card-actions flex-group">
+                                        <button class="btn btn-primary btn-sm view-details-btn">
+                                            <i class="fa-solid fa-eye"></i> Details
+                                        </button>
+                                        <a href="https://www.figma.com/design/uBTxLSWt4j9SrTOIqRX7W9/Serial-app?m=auto&t=6C6g8bGpXQlsmKPR-6"
+                                            target="_blank" class="btn btn-secondary btn-sm">
+                                            <i class="fa-brands fa-figma"></i> Figma
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements Section -->
+        <section id="education" class="education-section section bg-alt">
+            <div class="education-container container grid">
+                <!-- Left Column: Education -->
+                <div class="education-block">
+                    <div class="section-header">
+                        <h2 class="section-title text-gradient">Education</h2>
+                        <div class="section-underline"></div>
+                    </div>
+
+                    <div class="education-list">
+                        <!-- Card 1: B.Tech -->
+                        <div class="education-card card fade-in-scroll">
+                            <div class="education-icon-wrapper text-gradient">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span class="education-date"><i class="fa-regular fa-calendar-days"></i> 2021 – 2025</span>
+                            <h3 class="degree-title">B.Tech in Computer Science and Business Systems</h3>
+                            <h4 class="institution-name">Sethu Institute of Technology</h4>
+                            <div class="education-gpa-badge">
+                                <span>CGPA</span>
+                                <strong>7.7 / 10</strong>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: 12th -->
+                        <div class="education-card card fade-in-scroll">
+                            <div class="education-icon-wrapper text-gradient">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <span class="education-date"><i class="fa-regular fa-calendar-days"></i> 2020 – 2021</span>
+                            <h3 class="degree-title">Higher Secondary (12th) - Computer Science</h3>
+                            <h4 class="institution-name">Mangaiyarkarasi Higher Secondary School</h4>
+                            <div class="education-gpa-badge">
+                                <span>Percentage</span>
+                                <strong>70.2%</strong>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: 10th -->
+                        <div class="education-card card fade-in-scroll">
+                            <div class="education-icon-wrapper text-gradient">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <span class="education-date"><i class="fa-regular fa-calendar-days"></i> 2018 – 2019</span>
+                            <h3 class="degree-title">Secondary School (10th) - General Education</h3>
+                            <h4 class="institution-name">OCPM Girls Higher Secondary School</h4>
+                            <div class="education-gpa-badge">
+                                <span>Percentage</span>
+                                <strong>59.3%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Achievements -->
+                <div class="achievements-block">
+                    <div class="section-header">
+                        <h2 class="section-title text-gradient">Achievements</h2>
+                        <div class="section-underline"></div>
+                    </div>
+
+                    <div class="achievements-list">
+                        <!-- Card 1: Techy Fighter -->
+                        <div class="education-card achievement-card card fade-in-scroll">
+                            <div class="education-icon-wrapper text-gradient">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <span class="education-date"><i class="fa-regular fa-calendar-days"></i> 2024</span>
+                            <h3 class="degree-title">2nd Prize – Techy Fighter</h3>
+                            <h4 class="institution-name">Inter-College Technical Event</h4>
+                            <p class="achievement-desc">Showcased coding speed and developer agility in a competitive
+                                environment.</p>
+                            <div class="education-gpa-badge">
+                                <span>Award</span>
+                                <strong>Runner-Up</strong>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Organized IGNITE -->
+                        <div class="education-card achievement-card card fade-in-scroll">
+                            <div class="education-icon-wrapper text-gradient">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <span class="education-date"><i class="fa-regular fa-calendar-days"></i> 2023</span>
+                            <h3 class="degree-title">Organized IGNITE Event</h3>
+                            <h4 class="institution-name">Cyber Peace Cell Initiative</h4>
+                            <p class="achievement-desc">Successfully coordinated campaign advocating online safety and
+                                digital security.</p>
+                            <div class="education-gpa-badge">
+                                <span>Role</span>
+                                <strong>Coordinator</strong>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Startup & AR Workshop -->
+                        <div class="education-card achievement-card card fade-in-scroll">
+                            <div class="education-icon-wrapper text-gradient">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <span class="education-date"><i class="fa-regular fa-calendar-days"></i> 2023</span>
+                            <h3 class="degree-title">Startup & AR Workshop</h3>
+                            <h4 class="institution-name">Coimbatore Institute of Technology (CIT)</h4>
+                            <p class="achievement-desc">Hands-on workshops on startup incubation and Augmented Reality
+                                innovations.</p>
+                            <div class="education-gpa-badge">
+                                <span>Status</span>
+                                <strong>Participant</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="contact-container container">
+                <div class="section-header text-center">
+                    <h2 class="section-title text-gradient">Let's Connect</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info card fade-in-scroll">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out to discuss job opportunities, creative collaborations, or workflow
+                            automation ideas. I will get back to you as soon as possible.</p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item flex-group">
+                                <div class="detail-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <span>Phone</span>
+                                    <h4><a href="tel:+919629213948" class="contact-link">+91 9629213948</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item flex-group">
+                                <div class="detail-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span>Email</span>
+                                    <h4><a href="mailto:lajithaalagarbabu@gmail.com"
+                                            class="contact-link">lajithaalagarbabu@gmail.com</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item flex-group">
+                                <div class="detail-icon text-whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span>WhatsApp</span>
+                                    <h4><a href="https://wa.me/919629213948" target="_blank" class="contact-link">Chat
+                                            with Me</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item flex-group">
+                                <div class="detail-icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <h4><a href="https://linkedin.com/in/lajitha-alagarbabu" target="_blank"
+                                            class="contact-link">lajitha-alagarbabu</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item flex-group">
+                                <div class="detail-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div>
+                                    <span>GitHub</span>
+                                    <h4><a href="https://github.com/LajithaAlagarbabu" target="_blank"
+                                            class="contact-link">LajithaAlagarbabu</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item flex-group">
+                                <div class="detail-icon">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div>
+                                    <span>Portfolio</span>
+                                    <h4><a href="https://lajithaalagarbabu.github.io" target="_blank"
+                                            class="contact-link">lajithaalagarbabu.github.io</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item flex-group">
+                                <div class="detail-icon">
+                                    <i class="fa-solid fa-file-arrow-down"></i>
+                                </div>
+                                <div>
+                                    <span>Resume</span>
+                                    <h4><a href="assets/Lajitha_Alagarbabu__Resume.pdf" download
+                                            class="contact-link">Download Resume</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp Action Button -->
+                        <div class="contact-actions-row">
+                            <a href="https://wa.me/919629213948" target="_blank" class="btn btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Chat with Me
+                            </a>
+                        </div>
+
+                        <div class="contact-map-placeholder">
+                            <i class="fa-solid fa-earth-asia map-bg-icon"></i>
+                            <div class="map-overlay">
+                                <span>📍 Open to Relocate Anywhere in India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container card fade-in-scroll">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" name="name" placeholder="Your Name" required>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" name="email" placeholder="Your Email Address"
+                                    required>
+                                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" placeholder="Message Subject"
+                                    required>
+                                <span class="error-msg" id="subject-error">Please enter a subject</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5"
+                                    placeholder="Write your message here..." required></textarea>
+                                <span class="error-msg" id="message-error">Please write a message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+
+                            <div class="form-success-banner" id="form-success-banner">
+                                <i class="fa-solid fa-circle-check"></i> Message sent successfully! I will contact you
+                                shortly.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container flex-group justify-between">
+            <div>
+                <p class="footer-copyright">Made with ❤️ by Lajitha Alagarbabu</p>
+                <p class="footer-sub">Java Full Stack Developer</p>
+            </div>
+
+            <div class="footer-socials flex-group">
+                <a href="https://github.com/LajithaAlagarbabu" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/lajitha-alagarbabu" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:lajithaalagarbabu@gmail.com" target="_blank" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll to top" class="scroll-to-top-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-wrapper">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-body-content">
+                <div class="modal-grid">
+                    <div class="modal-visual-panel">
+                        <img id="modal-project-img" src="" alt="Project Image">
+                    </div>
+                    <div class="modal-details-panel">
+                        <div class="modal-header">
+                            <span class="modal-category text-gradient" id="modal-project-category">UI/UX Design</span>
+                            <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+                        </div>
+                        <div class="modal-info">
+                            <p class="modal-description" id="modal-project-description">Detailed description goes
+                                here...</p>
+
+                            <h4 class="modal-section-title">Key Highlights:</h4>
+                            <ul class="modal-highlights" id="modal-project-highlights">
+                                <!-- Dynamically populated list items -->
+                            </ul>
+
+                            <div class="modal-footer-info">
+                                <div class="modal-tech-stack">
+                                    <span class="tech-label">Design Tool:</span>
+                                    <div class="tech-badges flex-group" id="modal-project-tools">
+                                        <span class="tech-badge">Figma</span>
+                                    </div>
+                                </div>
+                                <div class="modal-actions flex-group">
+                                    <a href="#" class="btn btn-primary" id="modal-figma-btn">
+                                        <i class="fa-brands fa-figma"></i> View Figma Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
